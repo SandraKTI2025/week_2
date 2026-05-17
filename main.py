@@ -1,39 +1,40 @@
-#Päeva kontroll
-day = input("Mis päev on homme? (tööpäev/puhkepäev): ")
+# Päeva kontroll
+päev = input("Mis päev on homme? (tööpäev/puhkepäev): ")
 
-if day == "tööpäev":
+if päev == "tööpäev":
     print("Ma lähen magama, head ööd!")
-elif day == "puhkepäev":
-    print("Veel üks osa Netflixist")
+elif päev == "puhkepäev":
+    print("Veel üks osa Netflixist!")
 else:
-    print("Vale väärtus")
+    print("Vale väärtus – palun sisesta 'tööpäev' või 'puhkepäev'.")
 
-#Finantsnõustaja
+
+# Finantsnõustaja
 print("Tere tulemast programmi 'Finantsnõustaja'!")
 print("Sinu isiklik nõustaja ei tee emotsioonioste.")
 
-money = int(input("Kui palju raha sul on praegu?: "))
+raha = int(input("Kui palju raha sul praegu on?: "))
 
-if money < 2500:
+if raha < 2500:
     print("Sul pole piisavalt raha. Kogu edasi!")
-elif money == 2500:
-    print("Palju õnne, sul on piisavalt raha uue Iphone 17 Pro jaoks!")
+elif raha == 2500:
+    print("Palju õnne, sul on täpselt piisavalt raha uue iPhone 17 Pro jaoks!")
 else:
-    print("Saad osta Iphone 17 Pro ja raha jääb isegi üle.")
+    print("Saad osta iPhone 17 Pro ja raha jääb isegi üle.")
 
 
-#Sammulugeja
-goal = 10000
-steps = int(input("Mitu sammu oled juba teinud?: "))
+# Sammulugeja
+eesmärk = 10000
+sammud = int(input("Mitu sammu oled juba teinud?: "))
 
-percent = (steps / goal) * 100
-print(f"{percent:.2f}%")
+protsent = (sammud / eesmärk) * 100
+print(f"{protsent:.2f}%")
 
-if percent < 50:
+if protsent < 50:
     print("Oled alles poolel teel, liigu veel!")
-elif percent < 75:
+elif protsent < 75:
     print("Tubli, oled peaaegu eesmärgi täitnud!")
-elif percent < 100:
+elif protsent < 100:
     print("Suurepärane, oled peaaegu kohal!")
 else:
     print("Palju õnne, oled oma eesmärgi saavutanud!")
