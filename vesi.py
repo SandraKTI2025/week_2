@@ -1,6 +1,6 @@
-# Vee joomise programm
+#Vee joomise programm
 
-# Algus
+#Algus
 
 goal = 2000 #Eesmärk 2 L ehk 2000 ml
 glasses = int(input("Mitu klaasi vett sa oled täna joonud?:")) # Küsi kasutajalt mitu klaasi vett ta täna joonud on
@@ -17,4 +17,4 @@ elif percent < 100: # Kui protsent on alla 100 siis
 else: # Muidu
     print("Suurepärane, oled oma päevase eesmärgi täitnud!") # Väljasta "Suurepärane, oled oma päevase eesmärgi täitnud!"
 
-# Lõpp
+#Lõpp
