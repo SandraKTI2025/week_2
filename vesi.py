@@ -1,19 +1,20 @@
-#Vee joomise programm
+# Vee joomise programm
 
-#Algus
-eesmark = 2000  # Eesmärk 2 L ehk 2000 ml
-klaasid = int(input("Mitu klaasi vett sa oled täna joonud?: "))  # Küsi kasutajalt mitu klaasi vett ta täna joonud on
+# Algus
 
-ml = klaasid * 250  # Arvuta joodud milliliitrid (klaasid * 250)
-protsent = (ml / eesmark) * 100  # Arvuta protsent eesmärgist
+goal = 2000 #Eesmärk 2 L ehk 2000 ml
+glasses = int(input("Mitu klaasi vett sa oled täna joonud?:")) # Küsi kasutajalt mitu klaasi vett ta täna joonud on
 
-print(f"{protsent:.2f}%")  # Too tulemus protsentides välja (2 komakohta)
+ml = glasses * 250 #Arvuta joodud milliliitrid klaasid * 250
+percent = (ml/goal)*100  #Arvuta protsendiliselt joodud kogus eesmärgist
 
-if protsent < 50:
-    print("Joo rohkem vett, keha vajab seda!")
-elif protsent < 100:
-    print("Tubli, jätka samas vaimus!")
-else:
-    print("Suurepärane, oled oma päevase eesmärgi täitnud!")
+print(f"{percent}%") # Too tulemus protsentides välja
 
-#Lõpp
+if percent < 50: # Kui tulemus on alla 50 protsendi siis
+    print("Joo rohkem vett, keha vajab seda!") # Väljasta "Joo rohkem vett, keha vajab seda!"
+elif percent < 100: # Kui protsent on alla 100 siis
+    print("Tubli jätka samas vaimus !") # Väljasta "Tubli, jätka samas vaimus!"
+else: # Muidu
+    print("Suurepärane, oled oma päevase eesmärgi täitnud!") # Väljasta "Suurepärane, oled oma päevase eesmärgi täitnud!"
+
+# Lõpp
